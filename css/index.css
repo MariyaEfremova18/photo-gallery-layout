@@ -35,55 +35,58 @@ body {
 
 .logo {
     background-color: black;
-    width: 25em;
+    width: 35em;
     text-align: center;
 }
 
 .logo__item p {
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     font-weight: bold;
     font-family: "Arial Narrow";
-    padding-top: 4em;
+    padding-top: 3em;
 }
 
 .title__first {
     margin-right: 3em;
 }
 
-.title__first::before {
-    content: "«";
+.title__before {
     font-size: 40px;
     line-height: 14px;
     color: #ffffff8a;
     font-family: 'Bodoni Cyrillic';
     padding-right: 0.3em;
-    margin-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 .title {
-    font-size: 60px;
-    line-height: 23px;
+    font-size: 65px;
     color: #ffffff;
     font-family: "Decor", arial;
     text-align: center;
     align-items: center;
-    padding-top: 0.5em;
     padding-right: 1em;
     padding-left: 3em;
 }
 
-.title__second {
-    margin-left: 1em;
+.title__item {
+    display: flex;
+    height: 60px;
+    margin-bottom: -0.5em;
 }
 
-.title__second::after {
-    content: "»";
+.title__second {
+    margin-left: 1.2em;
+}
+
+.title__after {
     font-size: 40px;
     line-height: 14px;
     color: #ffffff8a;
     font-family: 'Bodoni Cyrillic';
     padding-left: 0.3em;
+    align-self: flex-end;
 }
 
 .content {
@@ -160,16 +163,16 @@ main {
 }
 
 .information {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 7em;
-    width: 35em;
+    padding-left: 9em;
+    width: 15em;
     justify-self: center;
 }
 
 .navigation {
     padding-top: 1.5em;
+    margin-bottom: 4.5em;
 }
 
 .navigation li {
@@ -178,36 +181,37 @@ main {
     line-height: 30px;
     color: #ffffff;
     font-family: "Franklin Gothic";
-    align-items: center;
     display: flex;
     align-items: center;
 }
 
-.navigation__item a {
+.navigation__item-title {
     color: #ffffff;
     text-decoration: none;
-
+    white-space: nowrap;
 }
 
-.navigation__item p {
-    align-self: center;
-    padding-bottom: 0.5em;
-    padding-left: 0.2em;
-    color: rgba(255, 255, 255, 0.288);
+.navigation__item-dashed {
+    border: 1px dashed #ffffff8a;
+    overflow: hidden;
+    margin-left: 0.2em;
+    width: 10em;
 }
 
+.navigation__item-dot {
+    color: #ffffff8a;
+}
 
 .about {
-    display: flex;
     font-size: 16px;
     color: #d9d9d9;
     font-family: "Arial";
     align-items: flex-end;
-    padding-bottom: 0;
+    width: 25em;
 }
 
 .gallery__item img {
-    width: 12em;
+    width: 15em;
     border: #ffffff 1px solid;
 }
 
